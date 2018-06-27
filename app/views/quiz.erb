@@ -26,6 +26,30 @@
          <input type="radio" name="location" value="b">Indoors
          <input type="radio" name="location" value="c">No preference
          <input type="radio" name="location" value="d">Both 
+         <% count=0 %>
+         <% a=0 %>
+         <% b=10
+ c=20 d=30
+puts "Lets find you a hobby to try!"
+ sleep(0.5)
+puts "Question 1: Where would you like to do this activity?"
+sleep(2)
+puts "a-Outdoors
+b-Indoors
+c-No preference
+d-Both 
+please select a,b,c, or d"
+where = gets.chomp 
+if where  == "a"
+   count += 0
+elsif where == "b"
+   count += 10 
+elsif where == "c"
+   count += 20
+elsif where == "d"
+   count += 30
+end 
+ count
         <h3>Do you like to work with your hands?</h3>
          <input type="radio" name="hands" value="a">Yes
          <input type="radio" name="hands" value="b">No
