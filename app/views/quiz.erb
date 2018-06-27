@@ -32,7 +32,8 @@
          <input type="radio" name="location" value="c">No preference
          <input type="radio" name="location" value="d">Both 
          <%
-where = gets.chomp 
+answer = params[location]
+
 if where  == "a"
    count += 0
 elsif where == "b"
